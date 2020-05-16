@@ -1,0 +1,12 @@
+/*
+.*
+*.aps
+!/res/
+!/src/
+!/.clang-format
+!/.editorconfig
+!/.gitattributes
+!/.gitignore
+!/CMakeLists.txt
+!/make.cmd
+!/makefile
