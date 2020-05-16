@@ -1,3 +1,13 @@
+// The following includes are required if the following line is missing:
+//
+// ```cmake
+// target_precompile_headers(${PROJECT_NAME} REUSE_FROM objects)
+// ```
+//
+#include <string>
+#include <cstdio>
+#include <cstdlib>
+
 #include <application/random.hpp>
 
 int main() {

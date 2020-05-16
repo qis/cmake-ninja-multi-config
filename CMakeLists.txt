@@ -13,5 +13,8 @@ target_compile_features(objects PUBLIC cxx_std_20)
 
 # Executable
 add_executable(${PROJECT_NAME} src/main.cpp src/main.manifest)
+
+# Comment out the following line to fix Ninja.
 target_precompile_headers(${PROJECT_NAME} REUSE_FROM objects)
+
 target_link_libraries(${PROJECT_NAME} PRIVATE objects)
