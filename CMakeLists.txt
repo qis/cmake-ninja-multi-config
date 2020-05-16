@@ -12,7 +12,7 @@ target_compile_definitions(objects PUBLIC NOMINMAX WIN32_LEAN_AND_MEAN)
 target_compile_features(objects PUBLIC cxx_std_20)
 
 # Executable
-add_executable(${PROJECT_NAME} src/main.cpp src/main.manifest)
+add_executable(${PROJECT_NAME} src/main.cpp)
 
 # Comment out the following line to fix Ninja.
 target_precompile_headers(${PROJECT_NAME} REUSE_FROM objects)
